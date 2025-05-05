@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Thank You - Tulip Nexus Limited</title>
+    <style>
+        .thank-you-container {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .success-icon {
+            font-size: 5rem;
+            color: #28a745;
+            margin-bottom: 2rem;
+            animation: scaleIn 0.5s ease-out;
+        }
+
+        .thank-you-content {
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+            animation-delay: 0.3s;
+        }
+
+        .thank-you-content h1 {
+            color: #2c3e50;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .thank-you-content p {
+            color: #626262;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .action-button {
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .primary-button {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .secondary-button {
+            background-color: transparent;
+            color: #2c3e50;
+            border: 2px solid #2c3e50;
+        }
+
+        .action-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message-sent {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/logo.webp" 
+                     alt="Tulip Nexus Logo" 
+                     width="150" 
+                     height="50"
+                     loading="eager"
+                     decoding="async">
+            </a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="thank-you-container">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="thank-you-content">
+                <span class="message-sent">Message Sent Successfully!</span>
+                <h1>Thank You for Reaching Out!</h1>
+                <p>We appreciate you contacting Tulip Nexus Limited. Our team has received your message and we'll get back to you within 24 hours. In the meantime, feel free to explore our services or connect with us on social media.</p>
+                <div class="action-buttons">
+                    <a href="index.html" class="action-button primary-button">
+                        <i class="fas fa-home"></i> Back to Home
+                    </a>
+                    <a href="services.html" class="action-button secondary-button">
+                        <i class="fas fa-briefcase"></i> Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section company-info">
+                <img src="../images/logo.webp" alt="Tulip Nexus Logo" class="footer-logo">
+                <p>Your trusted partner in global trade and procurement solutions.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/tulip-nexus-limited/
+                    "><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/tulipnexuslimited?igsh=MXE1eDU2Z3JsNTYzMQ%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contact Info</h4>
+                <div class="contact-item">
+                    <i class="fas fa-location-dot"></i>
+                    <p>Freedom way, Lekki,<br>Lagos, Nigeria</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="phone-numbers">
+                        <p>+44 7748 960937   </p>
+                        <p>+234 7081 24055   </p>
+                        <p>+234 9056 602195  </p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@tulipnexus.com</p>
+                </div>
+            </div>
+            <div class="footer-section map">
+                <h4>Find Us</h4>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7277772793847!2d3.4632139!3d6.428435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf44d06c89067%3A0xef4c8a6f566c8887!2sFreedom%20Way%2C%20Lekki%20Phase%20I%2C%20Lagos!5e0!3m2!1sen!2sng!4v1708680532049!5m2!1sen!2sng" 
+                        width="100%" 
+                        height="200" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tulip Nexus Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float">
+        <div class="whatsapp-button" onclick="toggleWhatsAppPopup()">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="whatsapp-popup" id="whatsappPopup">
+            <h3>Need Help? Chat with us</h3>
+            <p>Click support below to chat on WhatsApp</p>
+            <a href="https://wa.me/2349056602195" class="whatsapp-support" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Support
+            </a>
+        </div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
